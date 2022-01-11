@@ -1,0 +1,4 @@
+#!/bin/bash
+btrfs subvolume delete /.snapshots/root-backup-*
+btrfs subvolume delete /home/.snapshots/home-backup-*
+rm -r /.snapshots /home/.snapshots

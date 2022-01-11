@@ -1,0 +1,4 @@
+#!/bin/bash
+mkdir -p /.snapshots /home/.snapshots
+btrfs subvolume snapshot / /.snapshots/root-backup-$(date '+%F_%H_%M_%S')
+btrfs subvolume snapshot /home /home/.snapshots/home-backup-$(date '+%F_%H_%M_%S')
