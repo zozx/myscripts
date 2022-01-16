@@ -1,0 +1,1 @@
+qemu-system-x86_64 -name 'XXXX' -bios /usr/share/edk2-ovmf/OVMF_CODE.fd -boot d -cdrom XXXX.iso -hda XXXX.img -enable-kvm -smp X -m XG -net user,hostfwd=tcp::2222-:22 -net nic
